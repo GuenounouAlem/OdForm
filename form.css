@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("Norse-Bold.otf");
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -19,19 +24,20 @@ main {
 }
 
 .hero-container {
-    height: 100px;
+    font-family: 'Norse-Bold', Arial, Helvetica, sans-serif;
+    height: 150px;
     width: 100%;
-    background-color: black;
-    opacity: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 150px;
+    top: 250px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 6rem;
 }
 
-.hero-container > img {
-    position: absolute;
-}
+
 
 .left-footer {
     color: white;
@@ -39,5 +45,4 @@ main {
     bottom: 10px;
     left: 35%;
     font-size: smaller;
-    opacity: 0.85;
 }
