@@ -13,9 +13,43 @@ main {
     display: flex;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%;
+    width: 100%;
+    padding-top: 3rem;
+    padding-left: 4rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 4rem;
+}
+
+.form-elem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.form-elem label {
+    color: rgba(25, 24, 24, 0.617);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form-elem input {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 300px;
+    padding: 7px;
+}
 
 .left-container {
-    width: 30vw;
+    width: 37vw;
     height: 100vh;
     background-image: url('bgImage.png');
     background-size: cover;
@@ -45,4 +79,47 @@ main {
     bottom: 10px;
     left: 35%;
     font-size: smaller;
+}
+
+
+
+
+.right-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+}
+
+.top-right {
+    height: 30vh;
+    width: 100%;
+    background-color: aliceblue;
+    font-size: 1.6rem;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-left: 6rem;
+}
+
+.top-right p:first-child {
+    padding-top: 4rem;
+}
+
+.mid-right {
+    height: 45vh;
+    box-shadow: 5px 15px 10px black;
+}
+
+.mid-right > h2 {
+    padding-left: 3rem;
+    padding-top: 1.5rem;
+}
+
+.bot-right {
+    height: 25vh;
+    width: 100%;
+    background-color: aliceblue;
 }
