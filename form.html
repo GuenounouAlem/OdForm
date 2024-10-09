@@ -33,37 +33,40 @@
                     <div class="form-row">
                         <div class="form-elem">
                             <label for="fName">FIRST NAME</label>
-                            <input id="fName" type="text">
+                            <input id="fName" type="text" required>
                         </div>
                         <div class="form-elem">
                             <label for="lName">LAST NAME</label>
-                            <input id="lName" type="text">
+                            <input id="lName" type="text" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-elem">
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="form-elem">
                             <label for="tel">NUMBER</label>
-                            <input type="tel" name="telNum" id="tel">
+                            <input type="tel" name="telNum" id="tel" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-elem">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" minlength="8" required>
                         </div>
                         <div class="form-elem">
                             <label for="confPassword">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirmedPassword" id="confPassword">
+                            <input type="password" name="confirmedPassword" id="confPassword" minlength="8" required>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="bot-right">
-
+                <button type="submit">Create Account</button>
+                <p>
+                    Already have an account? <a href="#">Log In</a>
+                </p>
             </div>
         </div>
     </main>
